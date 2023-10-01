@@ -1,0 +1,9 @@
+<h2>{{job['title']}}</h2>
+            <div style='color:red;' id='location'>Location: {{job['location']}}</div>
+            <!--if salary is not known then it is not display-->
+            {% if 'salary' in job %}
+            <div>
+            <h2>Salary:<bold>{{job['salary']}}</bold></h2>
+        </div>  
+        {% endif %}
+            
