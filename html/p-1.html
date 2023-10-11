@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home page</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: red;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+table{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+tr,th,td,table{
+    border: 2px solid white;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+.b-1{
+    background-color: rgb(168, 168, 157);
+    color: black;
+
+}
+.b-2{
+    background-color: white;
+    color: black;
+
+}
+.b-1:hover{
+    background-color:cadetblue;
+    color: black;
+
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar" style="height:100%;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Home</a>
+  <a href="#">Market</a>
+  <div style="position:relative; float: bottom; padding-top: 400px;">
+
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+  </div>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  <table>
+ 
+
+        <tr>
+
+            <th>Id</th>
+            <th>name</th>
+            <th>Barcode</th>
+            <th>Prices</th>
+        
+        </tr>
+   
+        <tr>
+            <td>Value for id</td>
+            <td>Value for name</td>
+            <td>Value for Barcode</td>
+            <td>Value for price</td>
+        </tr>
+        <tr>
+            <td>Value for id</td>
+            <td>Value for name</td>
+            <td>Value for Barcode</td>
+            <td>Value for price</td>
+        </tr>
+        <tr>
+            <td>Value for id</td>
+            <td>Value for name</td>
+            <td>Value for Barcode</td>
+            <td>Value for price</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="b-1">
+                    apply here
+                </button>
+            </td>
+            <td>
+                <button class="b-2">
+                    more info
+                </button>
+            </td>
+            
+        </tr>
+    
+  </table>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

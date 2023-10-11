@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+{% block navbar%}
+<table style='width: 100%;'>
+ 
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>Barcode</th>
+        <th>Prices</th>
+        <th>Options</th>
+    </tr>
+        
+      {% for i in market_items %}
+        <tr>
+            <td>{{i['id']}}</td>
+            <td>{{i['name']}}</th>
+            <td>{{i['barcode']}}</td>
+            <td>{{i['price']}}</td>
+            <td>
+                    <button class="b-1">
+                        apply here
+                    </button>
+            
+            
+                    <button class="b-2">
+                        more info
+                    </button>
+            </td>
+                
+            
+        </tr>
+
+        {% endfor %}
+       
+  </table> 
+{% endblock %}

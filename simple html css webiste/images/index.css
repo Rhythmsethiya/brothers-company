@@ -1,0 +1,115 @@
+body{
+    background-color:pink;
+}
+
+.header-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Background color with some transparency */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners for the dropdown box */
+    color: white; /* Text color inside the dropdown */
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white; /* Text color for the dropdown links */
+}
+
+/* Style the dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #333; /* Background color on hover */
+}
+
+
+/* Position the dropdown content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-images .img1{
+    display: flex;
+}
+
+.content ul{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 30px; */
+
+}
+.content ul li{
+    padding-left: 30px;
+}
+.content ul li{
+    list-style: none;
+}
+.content ul li a{
+    text-decoration: none;
+}
+
+.header-images .right button{
+    font-size: 15px;
+    color: white;
+    background-color: darkgreen;
+}
+
+.Free{
+    margin-left: 20px;
+
+}
+
+.main-section{
+    margin-top: 30px;
+    display: flex;
+
+    justify-content: center;
+    align-items:center ;
+    padding: 30px;
+}
+
+
+.main-section .left-container h1{
+    font-size: 50px;
+    /* margin-left: 20px; */
+}
+.highHeading{
+    color: orange;
+}
+.main-section .left-container p{
+    font-size: 30px;
+}
+.main-section .left-container button{
+    padding: 20px;
+    background-color:darkgreen;
+    color: white;
+    }
+
+
+.main-section .right-container img{
+    height: 500px;
+    width:auto;
+}
+
+
+.footer{
+    margin: 50px;
+    height: 100px;
+}
+.footer p{
+    text-align: center;
+
+}
+
+.footer .images img{
+    margin-left: 60px;
+}
